@@ -25,7 +25,7 @@ Chart.register(
   Tooltip
 );
 
-function RealtimeChart({ data, width, height }) {
+function RealtimeChartco({ data, width, height }) {
   const canvas = useRef(null);
   const chartValue = useRef(null);
   const chartDeviation = useRef(null);
@@ -123,7 +123,7 @@ function RealtimeChart({ data, width, height }) {
       <div className="px-5 py-3">
         <div className="flex items-start">
           <div className="text-3xl font-bold text-gray-800 mr-2 tabular-nums">
-            <span ref={chartValue}></span> ug/m3
+            <span ref={chartValue}></span> ppm
           </div>
           <div
             ref={chartDeviation}
@@ -138,4 +138,4 @@ function RealtimeChart({ data, width, height }) {
   );
 }
 
-export default RealtimeChart;
+export default RealtimeChartco;

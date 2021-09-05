@@ -17,7 +17,7 @@ function DashboardCard04() {
   const [range, setRange] = useState(35);
 
   // Dummy data to be looped
-  const data = [20.81, 21.75, 23.48, 24.28, 30.14, 31.25, 25.04, 52.49];
+  const data = [5.43, 5.78, 5.89, 5.21, 5.11, 5.1, 5, 4.98, 4.9, 4.88, 5.43];
 
   const [slicedData, setSlicedData] = useState(data.slice(0, range));
 

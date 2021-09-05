@@ -123,7 +123,7 @@ function RealtimeChartpm({ data, width, height }) {
       <div className="px-5 py-3">
         <div className="flex items-start">
           <div className="text-3xl font-bold text-gray-800 mr-2 tabular-nums">
-            <span ref={chartValue}>57.81</span> ug/m3
+            <span ref={chartValue}></span> ug/m3
           </div>
           <div
             ref={chartDeviation}
