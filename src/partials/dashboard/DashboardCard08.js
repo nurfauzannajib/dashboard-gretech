@@ -5,7 +5,23 @@ import RealtimeChart from "../../charts/RealtimeChart";
 // Import utilities
 import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 
+const data = [];
+
 function DashboardCard08() {
+  const [dataSensor, setDatasensor] = useState();
+  fetch("https://mbr-productions.my.id/sensor/get-data.php")
+    .then((res) => res.json())
+    .then(
+      (result) => {
+        setDatasensor(result[0]["h2s"]);
+      },
+      // Note: it's important to handle errors here
+      // instead of a catch() block so that we don't swallow
+      // exceptions from actual bugs in components.
+      (error) => {
+        // this.setState({});
+      }
+    );
   // IMPORTANT:
   // Code below is for demo purpose only, and it's not covered by support.
   // If you need to replace dummy data with real data,
@@ -17,7 +33,7 @@ function DashboardCard08() {
   const [range, setRange] = useState(35);
 
   // Dummy data to be looped
-  const data = [7.81, 7.75, 7.48, 7.28, 7.14, 7.19, 7.25, 7.61, 7.21];
+  data.push(dataSensor);
 
   const [slicedData, setSlicedData] = useState(data.slice(0, range));
 
