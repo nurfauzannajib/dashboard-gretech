@@ -54,12 +54,19 @@ function Dashboard() {
               <DashboardCard01 />
               <Summary />
               <DashboardCard05 />
+              <Summary />
               <DashboardCard06 />
+              <Summary />
               <DashboardCard07 />
+              <Summary />
               <DashboardCard08 />
+              <Summary />
               <DashboardCard09 />
+              <Summary />
               <DashboardCard10 />
+              <Summary />
               <DashboardCard11 />
+              <Summary />
             </div>
           </div>
         </main>
