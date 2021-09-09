@@ -12,6 +12,7 @@ import DashboardCard10 from "../partials/dashboard/DashboardChart10";
 import DashboardCard11 from "../partials/dashboard/DashboardCard11";
 import Summary from "../partials/dashboard/Summary";
 import DashboardCard01 from "../partials/dashboard/DashboardCard04";
+import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 
 function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -51,8 +52,8 @@ function Dashboard() {
 
             {/* Cards */}
             <div className="grid grid-cols-2 gap-6">
-              <DashboardCard01 />
               <Summary />
+              <DashboardCard01 />
               <DashboardCard05 />
               <Summary />
               <DashboardCard06 />
@@ -67,6 +68,7 @@ function Dashboard() {
               <Summary />
               <DashboardCard11 />
               <Summary />
+              <DashboardCard12 />
             </div>
           </div>
         </main>

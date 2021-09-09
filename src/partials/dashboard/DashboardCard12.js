@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Info from "../../utils/Info";
-import RealtimeChart from "../../charts/RealtimeChartpm";
+import RealtimeChart from "../../charts/RealtimeChart";
 
 // Import utilities
 import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 
 const data = [];
 
-function DashboardCard11() {
+function DashboardCard12() {
   const [dataSensor, setDatasensor] = useState();
   fetch("https://mbr-productions.my.id/get-data.php")
     .then((res) => res.json())
     .then(
       (result) => {
-        setDatasensor(result[0]["pm10"]);
+        setDatasensor(result[0]["pm01"]);
       },
       // Note: it's important to handle errors here
       // instead of a catch() block so that we don't swallow
@@ -32,7 +32,7 @@ function DashboardCard11() {
   const [increment, setIncrement] = useState(0);
   const [range, setRange] = useState(35);
 
-  // Dummy data to be looped\
+  // Dummy data to be looped
   data.push(dataSensor);
 
   const [slicedData, setSlicedData] = useState(data.slice(0, range));
@@ -100,9 +100,9 @@ function DashboardCard11() {
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
       <header className="px-5 py-4 border-b border-gray-100 flex items-center">
-        <h2 className="font-semibold text-gray-800">pm 10</h2>
+        <h2 className="font-semibold text-gray-800">pm 0.1</h2>
         <Info className="ml-2" containerClassName="min-w-44">
-          <div className="text-sm text-center">Kadar pm 10</div>
+          <div className="text-sm text-center">Kadar pm 0.1</div>
         </Info>
       </header>
       {/* Chart built with Chart.js 3 */}
@@ -112,4 +112,4 @@ function DashboardCard11() {
   );
 }
 
-export default DashboardCard11;
+export default DashboardCard12;

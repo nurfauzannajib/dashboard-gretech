@@ -9,7 +9,7 @@ const data = [];
 
 function DashboardCard09() {
   const [dataSensor, setDatasensor] = useState();
-  fetch("https://mbr-productions.my.id/sensor/get-data.php")
+  fetch("https://mbr-productions.my.id/get-data.php")
     .then((res) => res.json())
     .then(
       (result) => {
