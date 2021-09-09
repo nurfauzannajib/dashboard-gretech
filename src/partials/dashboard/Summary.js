@@ -1,5 +1,4 @@
 import React from "react";
-import Mask from "../../images/mask.svg";
 import Verified from "../../images/verified.svg";
 
 function Summary() {
@@ -12,20 +11,12 @@ function Summary() {
         <span className="absolute pl-40 pt-6">
           <img className="w-6" src={Verified} alt="User" />
         </span>
-        <p className="absolute pl-20 pb-2 font-light text-xl text-white ">
-          Average Live CO Index
-          <p className="font-bold text-2xl pt-1">Good</p>
-        </p>
-
-        <span>
-          <img
-            className="w-20 h-20"
-            src={Mask}
-            width="32"
-            height="32"
-            alt="User"
-          />
-        </span>
+        <div className="absolute pl-20 pb-2 font-light text-white">
+          <p className="">
+            Average Live CO Index
+            <p className="font-bold text-2xl pt-1">Good</p>
+          </p>
+        </div>
       </header>
     </div>
   );
