@@ -5,7 +5,7 @@ import RealtimeChart from "../../charts/RealtimeChart";
 // Import utilities
 import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 
-function DashboardCard04() {
+function DashboardCard01() {
   // IMPORTANT:
   // Code below is for demo purpose only, and it's not covered by support.
   // If you need to replace dummy data with real data,
@@ -96,4 +96,4 @@ function DashboardCard04() {
   );
 }
 
-export default DashboardCard04;
+export default DashboardCard01;

@@ -3,7 +3,6 @@ import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
 import WelcomeBanner from "../partials/dashboard/WelcomeBanner";
 import Datepicker from "../partials/actions/Datepicker";
-import DashboardCard04 from "../partials/dashboard/DashboardCard04";
 import DashboardCard05 from "../partials/dashboard/DashboardCard05";
 import DashboardCard06 from "../partials/dashboard/DashboardCard06";
 import DashboardCard07 from "../partials/dashboard/DashboardCard07";
@@ -11,6 +10,8 @@ import DashboardCard08 from "../partials/dashboard/DashboardCard08";
 import DashboardCard09 from "../partials/dashboard/DashboardCard09";
 import DashboardCard10 from "../partials/dashboard/DashboardChart10";
 import DashboardCard11 from "../partials/dashboard/DashboardCard11";
+import Summary from "../partials/dashboard/Summary";
+import DashboardCard01 from "../partials/dashboard/DashboardCard04";
 
 function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -50,7 +51,8 @@ function Dashboard() {
 
             {/* Cards */}
             <div className="grid grid-cols-2 gap-6">
-              <DashboardCard04 />
+              <DashboardCard01 />
+              <Summary />
               <DashboardCard05 />
               <DashboardCard06 />
               <DashboardCard07 />
