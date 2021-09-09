@@ -5,7 +5,7 @@ import RealtimeChart from "../../charts/RealtimeChartpm";
 // Import utilities
 import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 
-const data = [];
+const data = ["0"];
 
 function DashboardCard10() {
   const [dataSensor, setDatasensor] = useState();
