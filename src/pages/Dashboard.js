@@ -54,6 +54,7 @@ function Dashboard() {
             <div className="grid grid-cols-2 gap-6">
               <Summary />
               <DashboardCard10 />
+              <Summary />
               <DashboardCard05 />
               <Summary />
               <DashboardCard06 />

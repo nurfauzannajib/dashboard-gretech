@@ -30,7 +30,7 @@ function WelcomeBanner() {
           </svg>
         </span>
         <h1 className="text-2xl pl-14 md:text-3xl text-grey-10 font-bold mb-1">
-          Makassar State University Makassar City, South Sulawesi 90222.
+          Device is off.
         </h1>
       </div>
     </div>
