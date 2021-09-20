@@ -11,8 +11,12 @@ import DashboardCard09 from "../partials/dashboard/DashboardCard09";
 import DashboardCard10 from "../partials/dashboard/DashboardChart10";
 import DashboardCard11 from "../partials/dashboard/DashboardCard11";
 import Summary from "../partials/dashboard/Summary";
+import Summary2 from "../partials/dashboard/Summary2";
 import DashboardCard01 from "../partials/dashboard/DashboardCard04";
 import DashboardCard12 from "../partials/dashboard/DashboardCard12";
+import DashboardCard03 from "../partials/dashboard/DashboardCard03";
+import DashboardCard02 from "../partials/dashboard/DashboardCard02";
+import DashboardCard00 from "../partials/dashboard/DashboardCard00";
 
 function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -70,6 +74,12 @@ function Dashboard() {
               <DashboardCard11 />
               <Summary />
               <DashboardCard12 />
+              <Summary2 />
+            </div>
+            <div className="grid grid-cols-12 gap-3 pt-6">
+              <DashboardCard03 />
+              <DashboardCard02 />
+              <DashboardCard00 />
             </div>
           </div>
         </main>
