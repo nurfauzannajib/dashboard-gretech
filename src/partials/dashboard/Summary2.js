@@ -4,7 +4,7 @@ import Verified from "../../images/verified.svg";
 
 function Summary() {
   return (
-    <div className="flex flex-col col-span-full sm:col-span-6 bg-blue-200 shadow-lg rounded-sm border border-gray-200 -mb-6">
+    <div className="flex flex-col col-span-full sm:col-span-6 bg-blue-200 rounded-sm border border-gray-200 -mb-6">
       <header className="px-8 py-4 border-b border-gray-100 flex items-center justify-between">
         <div className="h-16 w-16 rounded-md bg-blue-200 flex">
           <img className="w-full" src={Drop} alt="air" />

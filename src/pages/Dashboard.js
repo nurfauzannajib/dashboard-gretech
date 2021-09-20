@@ -76,7 +76,7 @@ function Dashboard() {
               <DashboardCard12 />
               <Summary2 />
             </div>
-            <div className="grid grid-cols-12 gap-3 pt-6">
+            <div className="grid grid-cols-12 gap-3 pt-5">
               <DashboardCard03 />
               <DashboardCard02 />
               <DashboardCard00 />

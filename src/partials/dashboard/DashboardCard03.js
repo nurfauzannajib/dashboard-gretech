@@ -1,29 +1,11 @@
 import React, { useState, useEffect } from "react";
-import RealtimeChart from "../../charts/RealtimeChart";
+import RealtimeChart from "../../charts/LineChart01";
 import Info from "../../utils/Info";
 
 // Import utilities
 import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 
-const data = ["0"];
-
 function DashboardCard03() {
-  const [dataSensor, setDatasensor] = useState();
-  fetch("https://mbr-productions.my.id/get-data.php")
-    .then((res) => res.json())
-    .then(
-      (result) => {
-        setDatasensor(result[0]["co"]);
-        console.log(dataSensor);
-      },
-      // Note: it's important to handle errors here
-      // instead of a catch() block so that we don't swallow
-      // exceptions from actual bugs in components.
-      (error) => {
-        // this.setState({});
-      }
-    );
-
   // IMPORTANT:
   // Code below is for demo purpose only, and it's not covered by support.
   // If you need to replace dummy data with real data,
@@ -35,10 +17,10 @@ function DashboardCard03() {
   const [range, setRange] = useState(35);
 
   // Dummy data to be looped
-  // const arrayData = [];
-
-  data.push(dataSensor);
-  // arrayData.push(dataSensor);
+  const data = [
+    300.81, 300.75, 301.48, 302.28, 297.14, 300.25, 301.04, 300.49, 302.49,
+    300.87, 300.73,
+  ];
 
   const [slicedData, setSlicedData] = useState(data.slice(0, range));
 
@@ -103,12 +85,12 @@ function DashboardCard03() {
   };
 
   return (
-    <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
-      <div className="flex flex-col col-span-full sm:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
+    <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white rounded-sm border border-gray-200">
+      <div className="flex flex-col col-span-full sm:col-span-6 bg-white  rounded-sm border border-gray-200">
         <header className="px-5 py-4 border-b border-gray-100 flex items-center">
-          <h2 className="font-semibold text-gray-800">pH</h2>
+          <h2 className="font-semibold text-gray-800">TDS</h2>
           <Info className="ml-2" containerClassName="min-w-44">
-            <div className="text-sm text-center">Kadar pH</div>
+            <div className="text-sm text-center">Kadar TDS</div>
           </Info>
         </header>
         {/* Chart built with Chart.js 3 */}
